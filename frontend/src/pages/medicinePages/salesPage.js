@@ -95,7 +95,7 @@ export const SalesPage = () => {
               <option>Tablet</option>
               <option>Vaccine</option>
             </Form.Select>
-            <Form.Label>Sold Price:</Form.Label>
+            <Form.Label>Sold Price:(Rs)</Form.Label>
             <Form.Control
               type="number"
               placeholder="Sold Price for One Unit"
@@ -107,6 +107,7 @@ export const SalesPage = () => {
               onChange={(e) => handleChange(e)}
             />
             <br />
+            <Form.Label>Remaining Amount:(Rs)</Form.Label>
             <Form.Control
               type="text"
               placeholder="Remaining Amount"

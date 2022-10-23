@@ -71,7 +71,14 @@ function ViewAll() {
                                         setSearch(e.target.value);
                                     }} />
                             </div>
-
+                            {space2}{space2}{space2}{space2}{space2}{space2}{space2}{space2}
+                            <Link to='/addDog'>
+                            <Button style={{backgroundColor: "blue" }}>ADD DOGS</Button>
+                          </Link>
+                          &nbsp;
+                          <Link to='/prescriptions'>
+                          <Button style={{backgroundColor: "#FF003D" }}>VIEW PRESCRIPTIONS</Button>
+                        </Link>
                         </div>
 
                 </div>
@@ -142,7 +149,6 @@ function ViewAll() {
 
                 </Table >
                 <li className="nav-item" style={{color:'white'}}>
-          <Link to={"/addDog"} className="nav-link active">Add Dog Details</Link>
         </li>
             </div>
         </div>

@@ -19,12 +19,12 @@ export default function Home() {
             width: '100% ',
             height: '1000px'
         }}>
-            <SideBar/>
             <div style={{ paddingLeft: "10vh", color: 'white', paddingTop: '4vh' }}>
-                <p >Doggie Care   {space2}{space2}{space2}{space2}{space2}{space2}{space2}{space2}{space2}{space2}{space2}<FaLock /></p>
+                <p style={{fontSize: "1.2rem"}}><b>DOGGIE CARE</b>  {space2}{space2}{space2}{space2}{space2}{space2}{space2}{space2}{space2}{space2}{space2}<FaLock /></p>
             </div>
-
-          
+            <center>
+            <img src=  "https://i.pinimg.com/originals/9f/df/93/9fdf93860f9269c05411e27291a7b936.gif" alt="gif" style={{height: "70vh", width: "50vw"}}/>
+            </center>
 
                             
         </div>

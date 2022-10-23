@@ -58,7 +58,7 @@ function AddHealthDetails() {
     }
 
     axios.put(`http://localhost:8000/dog/update/${id}`, updateDetails).then(() => {
-      alert("Added sucessfully");
+      alert("Updated sucessfully");
       window.location = `/viewDogs`;
 
     }).catch((err) => {
