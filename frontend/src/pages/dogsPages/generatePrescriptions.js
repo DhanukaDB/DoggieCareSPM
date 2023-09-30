@@ -151,7 +151,6 @@ function GeneratePrescriptions(props) {
                             <th>Medicines</th>
                             <th>Lab Tests</th>
                             <th>Veterinary Suregon</th>
-                            <th>Edit</th>
                             <th>Prescriptions</th>
                            
                         </tr>
@@ -185,10 +184,7 @@ function GeneratePrescriptions(props) {
                                         <td>{Prescriptions.medicine}</td>
                                         <td>{Prescriptions.labTests}</td>
                                         <td>{Prescriptions.doctor}</td>
-                                        <td>
-                                        <Link to={`/UpdateHealth/${Prescriptions._id}`}> <Button variant="outline-success"><FaPencilAlt/></Button></Link>
 
-                                        </td>
                                         <td> <Button variant="outline-danger" onClick={()=> createPDF(Prescriptions._id,Prescriptions.dogID,Prescriptions.dogName,Prescriptions.sex,Prescriptions.dob,Prescriptions.weight,Prescriptions.bloodGroup,Prescriptions.disease, Prescriptions.lastDate, Prescriptions.nextDate, Prescriptions.medicine, Prescriptions.labTests, Prescriptions.doctor )}><FaFilePdf/></Button></td>
                                       
                   

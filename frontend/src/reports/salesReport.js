@@ -33,7 +33,7 @@ export const SalesReport = () => {
                     <th>Medicine Name</th>
                     <th>Sold Quantity</th>
                     <th>Category</th>
-                    <th>Sold Price</th>
+                    <th>Sold Price(Rs:)</th>
                     <th>Remaining Amount</th>
                 </thead>
                 <tbody>

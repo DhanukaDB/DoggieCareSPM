@@ -15,7 +15,7 @@ export default function Addappointment() {
   const [date, setdate] = useState(" ");
   const [time, settime] = useState(" ");
   const [reason, setreason] = useState(" ");
-  const [timeval, onChange] = useState('10:00');
+  // const [timeval, onChange] = useState('10:00');
 
   function sendData(e) {
 
@@ -44,7 +44,7 @@ export default function Addappointment() {
       alert("error");
     })
   }
-  const [startDate, setStartDate] = useState(new Date());
+  // const [startDate, setStartDate] = useState(new Date());
 
   return (
     <div style={{
@@ -84,7 +84,7 @@ export default function Addappointment() {
                             placeholder=" Enter Name" style={{
                               backgroundColor: '#010020',
                               color: '#F62681'
-                            }} />
+                            }} required />
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -95,7 +95,7 @@ export default function Addappointment() {
                             placeholder=" Enter Mobile Number" style={{
                               backgroundColor: '#010020',
                               color: '#F62681'
-                            }} />
+                            }} required/>
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -106,7 +106,7 @@ export default function Addappointment() {
                             placeholder=" Enter NIC" style={{
                               backgroundColor: '#010020',
                               color: '#F62681'
-                            }} />
+                            }} required/>
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -119,8 +119,6 @@ export default function Addappointment() {
                               color: '#F62681'
                             }} />
                         </Form.Group>
-
-                       
    
                       </div>
 
@@ -137,7 +135,7 @@ export default function Addappointment() {
                             placeholder=" Enter Fee" style={{
                               backgroundColor: '#010020',
                               color: '#F62681'
-                            }} />
+                            }} required/>
                         </Form.Group>
 
                         <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -149,7 +147,7 @@ export default function Addappointment() {
                             placeholder='Select date' style={{
                               backgroundColor: '#010020',
                               color: '#F62681'
-                            }} />
+                            }} required/>
 
                         </Form.Group>
 
@@ -164,7 +162,7 @@ export default function Addappointment() {
                             onChange={(e) => settime(e.target.value)}
 
                             placeholder='Select Time'
-                             />
+                            required/>
                             
                         </Form.Group>
 

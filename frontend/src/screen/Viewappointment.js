@@ -3,14 +3,18 @@ import { Table, Button,Card } from "react-bootstrap";
 import axios from "axios";
 import { FaPencilAlt, FaTrashAlt,FaLock } from "react-icons/fa";
 import { Fragment} from "react";
+import { useNavigate } from "react-router-dom";
 
 function Viewappointment(props) {
     const [appointment, setappointment] = useState([]);
     const [search, setSearch] = useState("");
     const space2 = <Fragment>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Fragment>
+    const navigate = useNavigate();
 
+    const addappointment = ()=>{
+        navigate('/addappointment')
+      }
     useEffect(() => {
-
         //get funtion
         function getappointment() {
             axios.get("http://localhost:8000/appointment/").then((res) => {
@@ -39,6 +43,7 @@ function Viewappointment(props) {
         window.location = "/editappointment/"+_id
       }
 
+
     return (
         <div style={{
             backgroundColor: '#010020',
@@ -64,9 +69,9 @@ function Viewappointment(props) {
                                         setSearch(e.target.value);
                                     }} />
                             </div>
-
                         </div>
-
+                        {space2}{space2}{space2}{space2}{space2}{space2}{space2}{space2}{space2}
+                        <Button onClick={addappointment}> ADD APPOINTMENTS</Button>
                 </div>
                 <Table striped bordered hover size="sm" variant="light" >
                     <thead>

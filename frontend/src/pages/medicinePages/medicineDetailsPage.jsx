@@ -96,10 +96,14 @@ export const MedicineDetailsPage = () => {
               onChange={searchHandle}
             />
             <BsSearch style={{ margin: "10px" }} />
-            {space2}{space2}{space2}{space2}{space2}
-          <Link to='/salesreport'>
-            <Button style={{backgroundColor: "#FF003D" }}>GENERATE SALES REPORT</Button>
-          </Link>
+            {space2}{space2}{space2}{space2}
+          <Link to='/sales'>
+          <Button style={{backgroundColor: "blue" }}>ADD SALES</Button>
+        </Link>
+        &nbsp;
+        <Link to='/salesreport'>
+        <Button style={{backgroundColor: "#FF003D" }}>GENERATE SALES REPORT</Button>
+      </Link>
           </div>
           <div style={{ paddingLeft: "10vh", paddingRight: "10vh" }}>
             {medicines.length > 0 ? medicines.map((medicine) => (

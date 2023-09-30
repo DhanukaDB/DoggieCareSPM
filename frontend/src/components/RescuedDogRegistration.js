@@ -26,8 +26,7 @@ export default function DogRegistration() {
         rescuerName,rescuerContactNo,registerdDate,description,dogName,dogColour,weight,age,gender
     }
 
-    axios.post("http://localhost:5000/createRescuedDog/add", newRescuedDog).then(() => {
-      ("New Stray Puppy added")
+    axios.post("http://localhost:8000/createRescuedDog/add", newRescuedDog).then(() => {
       setRescuerName('');
       setRescuerContactNo('');
       setRegisterdDate('');
@@ -38,7 +37,7 @@ export default function DogRegistration() {
       setAge('');
       setGender('');
       
-      alert("Appointment added ");
+      alert("Dog added ");
       window.location = `/viewstrayPuppies`;
 
     }).catch((err) => {

@@ -31,6 +31,7 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
+      <SideBar />
       <Routes>
         <Route path="/medicine" element={<MedicinePage />} />
         <Route path="/medicines" element={<MedicineDetailsPage />} />
@@ -47,18 +48,15 @@ function App() {
         <Route exact path ="/sidebar" element={<SideBar/>} />
         <Route exact path ="/" element={<Home/>} />
         <Route exact path="/viewstrayPuppies" element={<ViewRescuedDogs/>} />
-        <Route exact path="/adoption" element={<Adoption/>} />
+        <Route exact path="/adoption/:id" element={<Adoption/>} />
         <Route exact path="/rescuedDogRegistration" element ={<RescuedDogRegistration/>}/>
         <Route exact path ="/registerResDog" element={<MultiStepForm/>} />
-
         <Route exact path ="/UpdateDog/:id" element={<UpdateDog/>} />
         <Route exact path ="/prescriptions" element={<GeneratePrescriptions/>} />
         <Route exact path ="/UpdateHealth/:id" element={<UpdateHealth/>} />
-
-
         <Route exact path="/sales" element={<SalesPage />} />
         <Route exact path="/salesreport" element={<SalesReport />} />
-
+        <Route exact path='/registerResDog' element={<MultiStepForm />} />
       </Routes>
     </BrowserRouter>
     </div>
